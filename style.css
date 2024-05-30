@@ -1,0 +1,133 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width:100%;
+    height: 100vh;
+    border: 1px solid black;
+
+}
+.container{
+    text-align: center;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.toggle_mode{
+    padding: 5px;
+    border-radius: 50%;
+  
+    border: 1px solid blue;
+    color: gold;
+}
+
+.dark{
+    background-color: rgba(239, 233, 233, 0.685);
+  
+    
+}
+.light{
+    background-color: rgb(0, 4, 8);
+
+}
+
+
+
+.bulb{
+    /* where margin-left is 275px out of 750px...200px are width */
+    margin-left: 38.6%; 
+
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid black;
+  
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+.turnon{
+    border: 1px solid black;
+   padding: 15px  30px;
+   border-radius: 25px;
+   margin: 50px;
+   background-color: green;
+}
+.turnon:hover{
+    background-color: rgb(73, 100, 32);
+}
+.turnon:active{
+    background-color: rgb(144, 236, 150);
+}
+
+    .turnoff{
+        border: 1px solid black;
+       padding: 15px  30px;
+       border-radius: 25px;
+       margin: 50px;
+       background-color: red;
+    }
+    .turnoff:hover{
+        background-color: rgb(179, 68, 68);
+    }
+    .turnoff:active{
+        background-color: rgb(183, 125, 125);
+    }
+
+
+.glow{
+    background-color: yellow;
+    box-shadow: 0 0 20px 10px black;
+}
+
+.notglow{
+ background-color: rgb(141, 21, 21);
+ box-shadow: 0 0 20px 10px red;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 80%;
+    }
+
+    .bulb{
+        width: 100px;
+        height: 100px;
+    }
+
+    h1{
+        font-size:20px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+/* @media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .bulb {
+        width: 80px;
+        height: 80px;
+    }
+
+    .toggle_mode {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+} */
